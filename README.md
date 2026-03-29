@@ -1,4 +1,4 @@
-🚀 Backend - Drip Store
+## Backend - Drip Store
 
 API desenvolvida para o sistema *projeto-backend-gt3*, responsável por gerenciar usuários, produtos, categorias e autenticação.
 
@@ -48,7 +48,7 @@ projeto-backend-gt3-main/
 
 ###  Instalar dependências
 
-bash
+```bash
 npm install
 
 
@@ -70,11 +70,11 @@ JWT_SECRET=sua_chave_secreta
 
 ### Rodar o servidor
 
-bash
+```bash
 npm run dev
 
 
-👉 O servidor será iniciado em:
+## O servidor será iniciado em:
 
 
 http://localhost:3000
@@ -84,7 +84,7 @@ http://localhost:3000
 
 ##  Rodar Testes
 
-bash
+```bash
 npm test
 
 
@@ -92,6 +92,23 @@ Se houver erro de tempo:
 
 json
 "test": "jest --runInBand --forceExit --testTimeout=30000"
+
+
+---
+
+## Exemplos de Uso da API
+Autenticação
+POST /login
+
+Exemplo de payload:
+
+{ "email": "usuario@email.com", "password": "senha" }
+
+Resposta:
+
+{ "token": "jwt_token_aqui" }
+
+Exemplo de rota protegida GET /products Authorization: Bearer
 
 
 ---
@@ -119,5 +136,6 @@ json
 
 Desenvolvido por Heliton Silva
 
----
+## Licença
+Este projeto está sob a licença ISC.
 
